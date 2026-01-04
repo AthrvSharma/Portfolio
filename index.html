@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athrv Sharma — BE CSE Student & Full Stack Developer</title>
+
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Portfolio of Athrv Sharma, a BE CSE student at Chitkara University exploring full stack development, motion-rich UI, and cloud deployments.">
+    <meta name="author" content="Athrv Sharma">
+    <meta property="og:title" content="Athrv Sharma — Portfolio">
+    <meta property="og:description" content="Student developer blending design-first interfaces with dependable backend systems and hackathon experience.">
+    <meta property="og:image" content="https://placehold.co/1200x630/0a66c2/ffffff?text=Athrv+Sharma">
+    <meta property="og:url" content="https://athrvsharma.dev">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JavaScript Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- Main Application Script (deferred for performance) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="orb orb-one" aria-hidden="true"></div>
+    <div class="orb orb-two" aria-hidden="true"></div>
+    <div class="orb orb-three" aria-hidden="true"></div>
+
+    <!-- Scroll progress bar -->
+    <div id="progress" aria-hidden="true"></div>
+
+    <!-- Main Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a class="nav-brand" href="#home" aria-label="Go to home">Athrv</a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <span class="nav-indicator" aria-hidden="true"></span>
+            <a class="nav-item" data-index="0" href="#home" aria-current="page">Home</a>
+            <a class="nav-item" data-index="1" href="#work">Projects</a>
+            <a class="nav-item" data-index="2" href="#labs">Lab</a>
+            <a class="nav-item" data-index="3" href="#services">Skills</a>
+            <a class="nav-item" data-index="4" href="#experience">Experience</a>
+            <a class="nav-item" data-index="5" href="#about">About</a>
+            <a class="nav-item" data-index="6" href="#insights">Insights</a>
+            <a class="nav-item" data-index="7" href="#contact">Contact</a>
+            <a class="btn tertiary nav-cta" href="mailto:athrv.dev@gmail.com">Email me</a>
+        </div>
+
+        <div class="nav-meta" role="group" aria-label="Social links">
+            <a class="nav-icon" href="https://github.com/AthrvSharma" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a class="nav-icon" href="https://www.linkedin.com/in/athrv-sharma-4269ab1ab/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <button id="themeToggle" class="nav-icon" aria-pressed="false" title="Toggle dark mode" aria-label="Toggle theme">
+                <i id="themeIcon" class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+    <!-- Main content -->
+    <main class="page" id="container">
+
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="heroTitle" id="home">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <span class="kicker">BE CSE · Chitkara University · Class of 2027</span>
+                    <h1 id="heroTitle">
+                        Building thoughtful experiences as a student developer
+                        <span class="typewriter" id="typewriter" aria-live="polite"></span>
+                    </h1>
+                    <p class="sub">I’m Athrv Sharma, a design-first full stack developer balancing university coursework, hackathons, and self-driven projects. I care about polished UI, dependable backends, and learning by shipping.</p>
+
+                    <div class="hero-actions">
+                        <a class="btn" href="https://www.linkedin.com/in/athrv-sharma-4269ab1ab/" target="_blank" rel="noopener" aria-label="Connect with Athrv on LinkedIn">
+                            <i class="fa-solid fa-paper-plane"></i> Connect on LinkedIn
+                        </a>
+                        <a class="btn secondary" href="resume.pdf" download aria-label="Download resume">
+                            <i class="fa fa-download"></i> Resume
+                        </a>
+                        <button class="btn ghost" id="viewHighlights" aria-label="View highlights">
+                            <i class="fa-solid fa-play"></i> Watch highlights
+                        </button>
+                    </div>
+
+                    <div class="hero-stats" role="list">
+                        <div class="stat" role="listitem">
+                            <span class="stat-value">06</span>
+                            <span class="stat-label">Portfolio projects</span>
+                        </div>
+                        <div class="stat" role="listitem">
+                            <span class="stat-value">03</span>
+                            <span class="stat-label">Hackathons & events</span>
+                        </div>
+                        <div class="stat" role="listitem">
+                            <span class="stat-value">02</span>
+                            <span class="stat-label">Cloud deployments</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-tech" role="list">
+                        <span class="tech-label">Preferred stack</span>
+                        <div class="chip-row">
+                            <span class="chip" role="listitem">HTML · CSS · Tailwind</span>
+                            <span class="chip" role="listitem">JavaScript · EJS</span>
+                            <span class="chip" role="listitem">Node.js · Express</span>
+                            <span class="chip" role="listitem">MongoDB · MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-card">
+                        <img src="IMG_7376.jpg" alt="Portrait of Athrv Sharma" loading="lazy" decoding="async">
+                        <div class="hero-card-overlay">
+                            <span class="badge"><i class="fa-solid fa-sparkles"></i> Design-first</span>
+                            <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Student journey</span>
+                        </div>
+                    </div>
+                    <div class="floating-card card-one">
+                        <span class="label">Hackathon energy</span>
+                        <span class="value"><i class="fa-solid fa-trophy"></i> Code Slam finalist</span>
+                    </div>
+                    <div class="floating-card card-two">
+                        <span class="label">Backend focus</span>
+                        <span class="value"><i class="fa-solid fa-database"></i> Spring Boot + MySQL</span>
+                    </div>
+                    <div class="floating-card card-three">
+                        <span class="label">Cloud deployed</span>
+                        <span class="value"><i class="fa-solid fa-cloud-arrow-up"></i> AWS + Nginx</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credibility section -->
+        <section class="credibility" aria-label="Brands and teams I've partnered with">
+            <div class="credibility-inner">
+                <span class="kicker">Communities & events that shaped my learning</span>
+                <div class="credibility-marquee" id="credibilityMarquee" aria-hidden="true">
+                    <div class="marquee-track">
+                        <span>Chitkara University</span>
+                        <span>Code Slam</span>
+                        <span>Hack the Mountains 5.0</span>
+                        <span>AWS Containers Workshop</span>
+                        <span>AI/ML on AWS Cloud</span>
+                        <span>Developer Student Clubs</span>
+                        <span>Open Source Builds</span>
+                        <span>Peer Mentoring</span>
+                    </div>
+                    <div class="marquee-track">
+                        <span>Chitkara University</span>
+                        <span>Code Slam</span>
+                        <span>Hack the Mountains 5.0</span>
+                        <span>AWS Containers Workshop</span>
+                        <span>AI/ML on AWS Cloud</span>
+                        <span>Developer Student Clubs</span>
+                        <span>Open Source Builds</span>
+                        <span>Peer Mentoring</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights & Projects Section -->
+        <section class="highlights" aria-labelledby="workTitle" id="work">
+            <div class="section-head">
+                <span class="kicker">Projects</span>
+                <h2 id="workTitle">Projects & Highlights</h2>
+                <p class="sub">A mix of coursework builds and self-led products where I practise polished UI, strong architecture, and measurable results.</p>
+            </div>
+
+            <div class="hi-slider">
+                <div id="hiSplide" class="splide" aria-label="Highlights carousel">
+                    <div class="splide__track">
+                        <ul class="splide__list" id="splideList"></ul>
+                    </div>
+                </div>
+                <div class="hi-controls" aria-hidden="true">
+                    <button class="hi-btn" id="hiPrev" aria-label="Previous slide"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="hi-btn" id="hiNext" aria-label="Next slide"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="work" aria-label="Projects grid">
+                <div class="projects" id="projects" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <!-- Labs / Playground -->
+        <section class="labs" aria-labelledby="labsTitle" id="labs">
+            <div class="section-head">
+                <span class="kicker">Lab</span>
+                <h2 id="labsTitle">Small experiments that sharpen my skills</h2>
+                <p class="sub">Sandbox projects where I try Spring Boot patterns, Firebase realtime updates, and motion snippets before rolling them into larger builds.</p>
+            </div>
+            <div class="labs-grid" id="labsGrid" aria-live="polite"></div>
+        </section>
+
+        <!-- Services / Expertise -->
+        <section class="services" aria-labelledby="servicesTitle" id="services">
+            <div class="section-head">
+                <span class="kicker">Skills</span>
+                <h2 id="servicesTitle">Skills I’m building through projects & events</h2>
+                <p class="sub">From designing polished interfaces to wiring secure APIs and shipping on AWS — these are the areas I keep practising as a student developer.</p>
+            </div>
+            <div class="service-grid" id="servicesGrid" aria-live="polite"></div>
+        </section>
+
+        <!-- Experience timeline -->
+        <section class="experience" aria-labelledby="experienceTitle" id="experience">
+            <div class="section-head">
+                <span class="kicker">Experience</span>
+                <h2 id="experienceTitle">Where I’m learning, building, and collaborating</h2>
+                <p class="sub">A snapshot of university work, hackathon experiences, and self-driven projects that keep my skills moving forward.</p>
+            </div>
+            <div class="timeline" id="experienceTimeline" aria-live="polite"></div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="achievements" aria-labelledby="achievementsTitle" id="achievements">
+            <div class="section-head">
+                <span class="kicker">Highlights</span>
+                <h2 id="achievementsTitle">Progress milestones so far</h2>
+            </div>
+            <div class="achievement-grid" id="achievementGrid" aria-live="polite"></div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials" aria-labelledby="testimonialTitle" id="testimonials">
+            <div class="section-head">
+                <span class="kicker">Reflections</span>
+                <h2 id="testimonialTitle">Notes from events, peers, and self-reviews</h2>
+            </div>
+            <div class="testimonial-track" id="testimonialTrack" aria-live="polite"></div>
+        </section>
+
+        <!-- Insights -->
+        <section class="insights" aria-labelledby="insightsTitle" id="insights">
+            <div class="section-head">
+                <span class="kicker">Insights</span>
+                <h2 id="insightsTitle">Sharing what I’m learning along the way</h2>
+                <p class="sub">Quick write-ups and notes from hackathons, workshops, and experiments I’m currently exploring.</p>
+            </div>
+            <div class="insights-grid" id="insightsGrid" aria-live="polite"></div>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section class="about-me" id="about" aria-labelledby="aboutTitle">
+            <div class="about-wrap">
+                <div class="about-text">
+                    <span class="kicker">About</span>
+                    <h2 id="aboutTitle">Student developer blending design, code, and constant learning</h2>
+                    <p>Hi! I’m <strong>Athrv Sharma</strong> — currently pursuing a Bachelor of Engineering in Computer Science at Chitkara University (2023‑2027). I love pairing clean interfaces with dependable backends, whether I’m working on a class assignment, a hackathon idea, or a personal product.</p>
+                    <p>My toolkit spans HTML/CSS, Tailwind, JavaScript, EJS, GSAP for motion, and server work in Node.js, Express, MongoDB Atlas, plus Spring Boot microservices with JWT and MySQL. I regularly deploy to AWS (EC2, S3, Nginx) and experiment with Firebase and Google OAuth for real-time flows.</p>
+                    <div class="about-values">
+                        <div class="value-card">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <div>
+                                <h3>Curious builder</h3>
+                                <p>I iterate fast, test ideas in hackathons, and ship what I learn to the web.</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <div>
+                                <h3>Design-first mindset</h3>
+                                <p>Great UI and GSAP-powered motion make every project feel intentional.</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <i class="fa-solid fa-people-group"></i>
+                            <div>
+                                <h3>Team collaborator</h3>
+                                <p>I enjoy working with classmates, mentors, and online communities to keep learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-row">
+                        <a class="btn" href="resume.pdf" download aria-label="Download resume">
+                            <i class="fa fa-download"></i> Download Resume
+                        </a>
+                        <a class="btn secondary" href="#contact" aria-label="Contact me">Let’s collaborate</a>
+                    </div>
+                </div>
+                <div class="skills" aria-live="polite"></div>
+            </div>
+            <div class="toolbelt">
+                <span class="kicker">Toolbelt</span>
+                <div class="stack-grid" id="stackGrid" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact" aria-labelledby="contactTitle">
+            <div class="contact-info">
+                <h3 id="contactTitle">Let’s collaborate or exchange ideas</h3>
+                <p class="small">Open to internships, hackathon teams, mentorship chats, or student-led collaborations. Leave a note and I’ll reply as soon as lectures and labs wrap up.</p>
+                <div class="icon-row">
+                    <a href="https://github.com/AthrvSharma" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/athrv-sharma-4269ab1ab/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:athrv.dev@gmail.com" aria-label="Email Athrv"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required placeholder="Your name">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="you@domain.com">
+                    <div class="helper">I usually respond within a day or two between classes.</div>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button class="btn" type="submit">Send Message</button>
+                    <button type="reset" class="btn secondary">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal Popup for Highlights -->
+    <div class="hi-popup" id="hiPopup" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="hi-popup-content" role="document" aria-labelledby="hiPopupTitle">
+            <button class="hi-popup-close" aria-label="Close dialog">&times;</button>
+            <div class="hi-popup-left"><img id="hiPopupImg" src="" alt=""></div>
+            <div class="hi-popup-right">
+                <h3 id="hiPopupTitle" class="hi-popup-title">Title</h3>
+                <p id="hiPopupDesc" class="hi-popup-desc small">Description</p>
+                <div id="hiPopupTags" style="margin-top:12px"></div>
+                <div style="margin-top:18px">
+                    <a id="hiPopupCTA" class="btn" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification for Form Submission -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <span class="kicker">Athrv Sharma</span>
+                <p class="small">BE CSE student exploring full stack development, motion-rich UI, and dependable backends.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#work">Work</a>
+                <a href="#services">Expertise</a>
+                <a href="#experience">Experience</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-cta">
+                <p class="small">Ready to collaborate?</p>
+                <a class="btn ghost" href="mailto:athrv.dev@gmail.com">athrv.dev@gmail.com</a>
+            </div>
+        </div>
+        <p class="small">© <span id="year"></span> Athrv Sharma. Crafted with motion & care.</p>
+    </footer>
+
+</body>
+</html>
